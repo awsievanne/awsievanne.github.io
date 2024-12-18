@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="pleaseLookGood.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Волейбольная Одежда</div>
+        <nav>
+            <ul>
+                <li><a href="iHateMyLife.html">Главная</a></li>
+                <li><a href="clothes.html">Одежда</a></li>
+                <li><a href="shoes.html">Обувь</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="cart.html" id="cartLink">Корзина (0) - 0₽</a>
+        </div>
+    </header>
+    <main>
+        <h1>Корзина</h1>
+
+        <div id="cart-items">
+
+        </div>
+
+        <button id="checkout" class="checkout-button" onclick="alert('В данный момент заказ недоступен'); setTimeout(() => location.reload(), 5000);">Оформить заказ</button>
+        <button class="clear-btn" onclick="clearCart()">Очистить корзину</button>
+    </main>
+
+    <script>
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = ''; 
+
+            if (cart.length > 0) {
+                cart.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('cart-item');
+                    itemDiv.innerHTML = `
+                        <p>${item.name} - ${item.price}₽</p>
+                    `;
+                    cartItemsContainer.appendChild(itemDiv);
+                });
+            } else {
+                cartItemsContainer.innerHTML = "<p>Ваша корзина пуста</p>";
+            }
+
+            document.querySelector('.cart a').innerText = `Корзина (${cart.length})`;
+        }
+
+        function clearCart() {
+            cart = [];
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            updateCartDisplay();
+        }
+
+        window.onload = function() {
+            updateCartDisplay();
+        };
+    </script>
+
+<footer>
+    <p>&copy; awsie, Москва 2024</p>
+</footer>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

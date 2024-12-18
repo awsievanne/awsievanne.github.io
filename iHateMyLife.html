@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин волейбольной одежды</title>
+    <link rel="stylesheet" href="pleaseLookGood.css">
+    <style>
+        .image-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .image-text-container img,
+        .image-text-container .text {
+            flex: 1; 
+            padding: 10px;
+        }
+
+        .image-text-container img {
+            object-fit: cover; 
+        }
+
+        .image-text-container .text {
+            margin-left: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Волейбольная Одежда</div>
+        <nav>
+            <ul>
+                <li><a href="iHateMyLife.html">Главная</a></li>
+                <li><a href="clothes.html">Одежда</a></li>
+                <li><a href="shoes.html">Обувь</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="cart.html" id="cartLink">Корзина (0) - 0₽</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Добро пожаловать в магазин волейбольной одежды!</h1>
+        <p>Вы — любитель волейбола и хотите сочетать стиль с комфортом? Мы создали идеальный магазин для всех поклонников этого увлекательного спорта. В нашем ассортименте — одежда и обувь для волейболистов любого уровня, от начинающих до профессионалов.</p>
+    
+        <div class="image-text-container">
+            <img src="images/main.jpg" style="width: 20%;">
+            <div class="text">
+                <h2>Что мы предлагаем:</h2>
+                <ul>
+                    <p><strong>Элегантные футболки</strong> и <strong>майки</strong>, которые обеспечат свободу движений и отличную вентиляцию.</p>
+                    <p><strong>Комфортные лонгсливы</strong> и <strong>топы</strong>, идеально подходящие для тренировок в любую погоду.</p>
+                    <p><strong>Шорты</strong> и <strong>лосины</strong>, которые сделают вашу игру еще более динамичной и удобной.</p>
+                    <p><strong>Обувь</strong>, которая подарит вам устойчивость и отличное сцепление с поверхностью, чтобы ваши движения были уверенными и быстрыми.</p>
+                </ul>
+        
+                <p>Мы заботимся о вашем комфорте и стиле! Наши товары прошли тщательные испытания и идеально подходят как для тренировок, так и для матчей. Одевайтесь в лучшую спортивную экипировку и играйте на высшем уровне!</p>
+        
+                <h2>Не упустите шанс!</h2>
+                <p>Приобретайте одежду, которая подчеркнет вашу индивидуальность и поможет достичь новых спортивных высот. Загляните в наш магазин и выберите свою идеальную экипировку прямо сейчас!</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; awsie, Москва 2024</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

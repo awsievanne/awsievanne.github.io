@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Одежда</title>
+    <link rel="stylesheet" href="pleaseLookGood.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Волейбольная Одежда</div>
+    <nav>
+        <ul>
+            <li><a href="iHateMyLife.html">Главная</a></li>
+            <li><a href="clothes.html">Одежда</a></li>
+            <li><a href="shoes.html">Обувь</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="cart">
+        <a href="cart.html" id="cartLink">Корзина (0) - 0₽</a>
+    </div>
+</header>
+
+<main>
+    <h1>Одежда</h1>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="images/tshirt1.webp" alt="Футболка 1">
+            <h3>Футболка 1</h3>
+            <p>Описание футболки 1</p>
+            <p class="price">500₽</p>
+            <button class="add-to-cart" onclick="addToCart('Футболка 1', 500)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/tshirt2.webp" alt="Футболка 2">
+            <h3>Футболка 2</h3>
+            <p>Описание футболки 2</p>
+            <p class="price">500₽</p>
+            <button class="add-to-cart" onclick="addToCart('Футболка 2', 500)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/tanktop1.webp" alt="Майка 1">
+            <h3>Майка 1</h3>
+            <p>Описание майки 1</p>
+            <p class="price">500₽</p>
+            <button class="add-to-cart" onclick="addToCart('Майка 1', 500)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/tanktop2.webp" alt="Майка 2">
+            <h3>Майка 2</h3>
+            <p>Описание майки 2</p>
+            <p class="price">500₽</p>
+            <button class="add-to-cart" onclick="addToCart('Майка 2', 500)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/longsleeve1.webp" alt="Лонгслив 1">
+            <h3>Лонгслив 1</h3>
+            <p>Описание лонгслива 1</p>
+            <p class="price">1000₽</p>
+            <button class="add-to-cart" onclick="addToCart('Лонгслив 1', 1000)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/longsleeve2.webp" alt="Лонгслив 2">
+            <h3>Лонгслив 2</h3>
+            <p>Описание лонгслива 2</p>
+            <p class="price">1000₽</p>
+            <button class="add-to-cart" onclick="addToCart('Лонгслив 2', 1000)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/shorts1.webp" alt="Шорты 1">
+            <h3>Шорты 1</h3>
+            <p>Описание шорт 1</p>
+            <p class="price">900₽</p>
+            <button class="add-to-cart" onclick="addToCart('Шорты 1', 900)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/shorts2.webp" alt="Шорты 2">
+            <h3>Шорты 2</h3>
+            <p>Описание шорт 2</p>
+            <p class="price">900₽</p>
+            <button class="add-to-cart" onclick="addToCart('Шорты 2', 900)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/leggins1.webp" alt="Лосины 1">
+            <h3>Лосины 1</h3>
+            <p>Описание лосин 1</p>
+            <p class="price">800₽</p>
+            <button class="add-to-cart" onclick="addToCart('Лосины 1', 800)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/leggins2.webp" alt="Лосины 2">
+            <h3>Лосины 2</h3>
+            <p>Описание лосин 2</p>
+            <p class="price">800₽</p>
+            <button class="add-to-cart" onclick="addToCart('Лосины 2', 800)">Добавить в корзину</button>
+        </div>
+
+        <div class="product">
+            <img src="images/top.webp" alt="Топ">
+            <h3>Топ</h3>
+            <p>Описание топа</p>
+            <p class="price">550₽</p>
+            <button class="add-to-cart" onclick="addToCart('Топ', 550)">Добавить в корзину</button>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; awsie, Москва 2024</p>
+</footer>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
